@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Importing JQuery Library-->
+		<script type="text/javascript" src="jquery.js"></script>
+		<!--Importing JQuery Cycle Library-->
+		<script type="text/javascript" src="jquery-cycle.js"></script>
+		<!--Local JavaScript for DOM Manipulation-->
+		<script type="text/javascript">
+			var html = '';
+			$(document).ready(function(){
+				$.getJSON('students.json',function(data){
+
+					$.each(data, function(key, value){
+
+						$.each(value, function(index, student){
+							html += '<div class="student">';
+
+							html += '<h2>'+ student.level+' of the Month</h3>';
+
+							html += '<h4>'+student.firstname+
+								' '+ student.lastname+'</h4>';
+
+							html += '<p>'+ student.class+'</p>';
+
+							html += '</div>';
+						})
+					});
+
+					$('#students').html(html);
+
+					$('#students').cycle({
+						fx:'fade',
+						pause:'1',
+						prev:'#prev',
+						next:'#next',
+						speed:500,
+						timeout: 10000
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<a href="#" id="prev">Prev</a>
+		<a href="#" id="next">Next</a>
+		<div id="students"></div>
+	</body>
+</html>

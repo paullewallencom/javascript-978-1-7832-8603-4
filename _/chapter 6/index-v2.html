@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Importing JQuery Library-->
+		<script type="text/javascript" src="jquery.js"></script>
+		<!--Importing JQuery Cycle Library-->
+		<script type="text/javascript" src="jquery-cycle.js"></script>
+		<!--Local JavaScript for DOM Manipulation-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.getJSON('students.json',function(data){
+				 console.log(data);
+				});
+			});
+		</script>
+	</head>
+	<body>
+
+	</body>
+</html>

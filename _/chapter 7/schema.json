@@ -1,0 +1,24 @@
+
+var schema = {
+
+		"client":{
+				"id":{
+						"type":"int",
+						"size":11,
+						"primaryKey":"true",
+						"required":"true"
+					},
+				"name":{
+						"type":"varchar",
+						"size":255,
+						"required":"true"
+				},
+				"enabled":{
+						"type":"tinyint",
+						"size":4,
+						"required":"true",
+						"defaultValue":1
+				}
+		}
+
+}

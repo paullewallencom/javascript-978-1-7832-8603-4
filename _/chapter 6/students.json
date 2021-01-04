@@ -1,0 +1,46 @@
+{
+    "students": [
+        {
+            "studentid": "101",
+            "firstname": "John",
+            "lastname": "Doe",
+            "level": "Freshman",
+            "class": "Environmental Toxicology"
+        },
+        {
+            "studentid": "102",
+            "firstname": "Jason",
+            "lastname": "Roe",
+            "level": "Freshman",
+            "class": "Economics"
+        },
+        {
+            "studentid": "103",
+            "firstname": "Mark",
+            "lastname": "Doe",
+            "level": "Sophomore",
+            "class": "Polymer Sciences"
+        },
+        {
+            "studentid": "104",
+            "firstname": "Kirk",
+            "lastname": "Spencer",
+            "level": "Freshman",
+            "class": "Quantum Mechanics"
+        },
+        {
+            "studentid": "105",
+            "firstname": "Austin",
+            "lastname": "Byrne",
+            "level": "Senior",
+            "class": "Geology"
+        },
+        {
+            "studentid": "106",
+            "firstname": "Richard",
+            "lastname": "Roe",
+            "level": "Sophomore",
+            "classes": "Marketing"
+        }
+    ]
+}

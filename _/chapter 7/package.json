@@ -1,0 +1,26 @@
+
+{
+  "name": "TestNodeJSProject",
+  "version": "0.0.1",
+  "author": "Sai Sriparasa <sai.sriparasa@test.com>",
+  "dependencies": {
+    "async": "0.1.18",
+    "connect": "1.8.6",
+    "connect-assetmanager": "0.0.27",
+    "connect-auth": "0.5.1",
+    "connect-mongo": "0.1.7",
+    "cron": "0.3.0",
+    "email": "0.2.5",
+    "emailjs": "0.2.8",
+    "express": "2.5.10",
+    "express-form": "0.6.2",
+    "express-messages": "0.0.2",
+    "eyes": "0.1.7",
+    "fbgraph": "0.2.1",
+    "facebook-sdk": "0.3.2",
+    "jade": "0.26.0",
+    "moment": "1.7.0",
+    "mongodb": "1.0.2",
+  },
+  "engines": {"node": "0.6.x", "npm": "1.0.x"}
+}

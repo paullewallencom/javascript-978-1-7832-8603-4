@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AJAX using JQuery</title>
+		<script type="text/javascript" 
+			src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+		<script>
+			$(document).ready(function(){
+				$('#getFeed').click(function(){
+				$.getJSON('/index.php', function(data){
+						if(data){
+							$.each(data, function(key, value){
+								$('#feedContainerList').append(
+								"<li>Student Id is "+ value.studentid+
+								" and the student name is "
+								+ value.firstname+" "+ value.lastname+"</li>");
+							});
+						}
+					});
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<h2>AJAX using JQuery</h2>
+		<input type="button" id="getFeed" value="Get Feed" />
+		<div id="feedContainer">
+			<ul id="feedContainerList">
+
+			</ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adding a Student</title>
+		<script type="text/javascript" 
+			src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+		<script>
+			$(document).ready(function(){
+
+			var first_name = "Kent";
+			var last_name = "Clark";
+
+			var addresses = ["5400 W Parmer Ln", "1919 Elridge Pkwy"];
+			var zip_codes = ["78757", "77087"];
+			var classes = ["International Business", "Economics Statistics"];
+
+			$.ajax({
+				"url":"addUser.php",
+				"type":"POST",
+				"data":{
+					"first_name":first_name, 
+					"last_name":last_name,
+					"addresses":addresses,
+					"zip_codes":zip_codes,
+					"classes":classes
+				},
+				"dataType":"JSON"
+				}).done(function(data){
+					console.log(data);	
+				});
+			});	
+		</script>
+	</head>
+	<body>
+		<h2>Adding a student</h2>
+		<p>Retrieving student information based on classes they are enrolled in and the zip code.</p>
+	</body>
+</html>

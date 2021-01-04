@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Asynchronous Call to Reddit</title>
+		<script type="text/javascript" 
+			src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+		<script>
+			$(document).ready(function(){
+				$.ajax({
+					"url":"http://www.reddit.com/.json",
+					"type":"GET",
+					"data":{},
+					"dataType":"JSON"
+				}).done(function(data){
+					console.log(data);	
+				});
+			});	
+		</script>
+	</head>
+	<body>
+		<h2>Asynchronous Call to Reddit</h2>
+		<p>Asynchronous call to the website reddit.com</p>
+	</body>
+</html>

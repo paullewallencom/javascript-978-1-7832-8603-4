@@ -1,0 +1,12 @@
+
+
+  PROJECT: "test project"
+  ENV: "DEV"
+  AUTOLOAD: 
+    - "class1.php"
+    - "class2.php"
+    - "class3.php"
+  EXCLUDE: 
+    - "project_x"
+    - "vendor"
+  RECURSIVE: "true"

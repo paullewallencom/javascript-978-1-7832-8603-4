@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>JSONP Call to Reddit</title>
+		<script type="text/javascript" 
+			src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+		<script>
+			$(document).ready(function(){
+				$.ajax({
+					"url":"http://www.reddit.com/.json?jsonp=getRedditData",
+					"type":"GET",
+					"dataType":"jsonp",
+					"contentType": "application/json",
+					"jsonpCallback":"getRedditData",
+					"success":function(data){
+						console.log(data);
+					}
+				})
+			});	
+		</script>
+	</head>
+	<body>
+		<h2>JSONP Call to Reddit</h2>
+		<p>JSONP call to the website reddit.com</p>
+	</body>
+</html>
